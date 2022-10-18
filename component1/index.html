@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component1</title>
+    <link rel="stylesheet" href="./input.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-size: 20px;
+      }
+      .arrow {
+        font-size: 14px;
+      }
+      .cont .message {
+        visibility: hidden;
+      }
+      .cont:hover .message {
+        visibility: visible;
+      }
+    </style>
+  </head>
+
+  <body class="bg-sky-50 h-[100vh] flex justify-center">
+    <!-- <div class="top h-96 lg:h-72"></div> -->
+    <div
+      class="contianer flex text-center justify-center items-center bg-white w-4/5 m-auto p-2 border border-1 border-sky-100 rounded-lg shadow-lg shadow-sky-200/40 hover:cursor-pointer hover:scale-105 transition-all duration-200 lg:w-1/4 lg:p-4"
+    >
+      <img class="w-11 m-3" src="hackathon-icon.svg" alt="hackathon" />
+      <div class="content flex flex-col text-left mx-1 w-[80%] h-fit">
+        <div
+          class="heading text-sky-800 font-semibold leading-4 hover:text-sky-500 lg:leading-5 lg:my-1.5"
+        >
+          Hackathons & Coding Challenges
+        </div>
+        <div class="flex text-sky-500">
+          <span class="text-xs font-semibold lg:text-sm"
+            >Create Hackathons
+          </span>
+          <span class="arrow material-symbols-outlined mt-1 ml-2 lg:mt-1">
+            arrow_forward
+          </span>
+        </div>
+      </div>
+      <div
+        class="cont relative hover:before:content-[''] before:absolute before:-top-10 before:block hover:before:w-7 hover:before:h-7 hover:before:bg-gray-800 hover:before:rotate-45 h-fit -top-4"
+      >
+        <div
+          class="message absolute -top-36 -right-24 w-60 bg-gradient-to-t from-gray-800 via-gray-800/95 to-gray-800/80 text-slate-200 rounded-xl px-5 py-4 text-left"
+        >
+          Lorem ipsum dolor sit amet dolor sit amet consectetur adipis elit
+          consectetur adipis elit reprehenderit?
+        </div>
+        <span
+          class="material-symbols-outlined mx-1 my-3 text-gray-500 mt-0 relative"
+        >
+          info
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
